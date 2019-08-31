@@ -1,0 +1,2 @@
+include ':app', ':rxsocketio'
+rootProject.name='RxSocketIO'
