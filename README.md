@@ -11,8 +11,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.gorgexec.mvvmcore:mvvmcore:1.0.7'
-  annotationProcessor 'com.gorgexec.mvvmcore:compiler:1.0.7'
+  com.gorgexec.rxsocketio:rxsocketio:1.0.0
 }
 ```
 
