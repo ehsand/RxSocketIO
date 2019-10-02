@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-  com.gorgexec.rxsocketio:rxsocketio:1.0.0
+  implementation 'com.gorgexec.rxsocketio:rxsocketio:1.0.0'
 }
 ```
 
