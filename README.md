@@ -29,12 +29,10 @@ RxSocketIo socket = RxSocketIo.create("http://localhost", events);
 
 //subscribing socket state
 disposable.add(socket.observeState()
-                .subscribeOn(Schedulers.computation())
                 .subscribe(this::onState));
 
 //subscribing socket incoming messages from server               
 disposable.add(socket.observeMessages()
-                .subscribeOn(Schedulers.computation())
                 .subscribe(this::onIncomingMessage));
                 
 socket.connect();
