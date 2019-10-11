@@ -40,7 +40,7 @@ disposable.add(socket.observeMessages()
 socket.connect();
 
 ```
-You can set a socket with additional options. It is the original `Socket.IO-client` liblary object.
+You can set a socket with additional options. It is the original `Socket.IO-client` liblary object:
 
 ```java
 
