@@ -19,7 +19,7 @@ dependencies {
 
 ```java
 
- Collection<String> events = new ArraySet<>();
+Collection<String> events = new ArraySet<>();
         events.add("login");
         events.add("new message");
         
