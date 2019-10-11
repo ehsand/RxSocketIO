@@ -17,7 +17,25 @@ dependencies {
 
 ## Usage
 
-TBD
+```java
+
+ Collection<String> events = new ArraySet<>();
+        events.add("login");
+        events.add("new message");
+        
+RxSocketIo socket = RxSocketIo.create("http://localhost", events);
+
+disposable.add(socket.observeState()
+                .subscribeOn(Schedulers.computation())
+                .subscribe(this::onState));
+                
+disposable.add(socket.observeMessages()
+                .subscribeOn(Schedulers.computation())
+                .subscribe(this::onIncomingMessage));
+                
+socket.connect();
+
+```
 
 ### Example
 
