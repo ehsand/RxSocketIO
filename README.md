@@ -40,6 +40,17 @@ disposable.add(socket.observeMessages()
 socket.connect();
 
 ```
+You can set a socket with additional options. It is the original `Socket.IO-client` liblary object.
+
+```java
+
+IO.Options options = new IO.Options();
+options.timeout = 50000;
+
+RxSocketIo socket = RxSocketIo.create("http://localhost", events, options);
+```
+Full options description is available [here](https://github.com/socketio/socket.io-client-java)
+
 
 Sending message:
 
